@@ -1,0 +1,82 @@
+* {
+  box-sizing:border-box;
+}
+
+body{
+  background: lightgreen;
+  height:100vh;
+  margin:0;
+  padding:0;
+}
+
+.todo__container {
+  background: lightyellow;
+  width:400px;
+  margin: auto;
+  margin-top: 25vh;
+
+}
+
+
+
+.todo__header{
+  padding: 10px;
+  background:black;
+  color:pink;
+}
+.todo__toAdd{
+  border-radius: 4px 0 0 4px ;
+  border:none;
+}
+
+h1{
+  margin:0;
+  text-align: center;
+}
+h1:hover{
+  color:white;
+  text-shadow:    0 0 5px #fff,
+                  0 0 10px #fff, 
+                  0 0 15px #fff, 
+                  0 0 20px pink, 
+                  0 0 35px pink, 
+                  0 0 40px pink, 
+                  0 0 50px pink, 
+                  0 0 75px pink;
+}
+ul{
+  padding:0;
+}
+li{
+  position:relative;
+  list-style: none  ;
+  padding:10px;
+  width:100%;
+}
+li:hover{
+  background:moccasin;
+}
+
+.close{
+  content:"supprimer";
+  background:lightblue;
+  height:100%;
+  position:absolute;
+  right:0;
+  top:0;
+  padding:  5px ;
+  text-align:center;
+}
+.close:hover{
+  background:dodgerblue;
+}
+
+.todo__taskChecked{
+  margin-right : 2rem;
+}
+
+.todo__taskChecked:checked + label{
+  color: grey;
+  text-decoration: line-through;
+
+}
